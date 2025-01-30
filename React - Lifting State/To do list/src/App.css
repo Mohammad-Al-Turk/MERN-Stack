@@ -1,0 +1,30 @@
+import React, { useState } from 'react';
+ 
+export default function listForm() {
+    const [list, setList] = useState(["task 1"]);
+    const [task,setTask]=useState('');
+    const [isTasty, setIsTasty] = useState(false);
+
+    
+
+    
+
+    function handleList(e) {
+        e.preventDefault();
+        setList([...list, task]);
+        setTask('');
+    }
+    
+    return (
+
+        <>
+        <form onSubmit={handleList}>
+            <input type="text" onChange={e => setTask(e.target.value)} value={task}/><br/>
+            <button className='btn'>Add</button><br />
+        </form>
+        {list.map((item, i) =><li key={i}>{item}</li>)}
+        <label>sdfghjklkjhgftyu<input type="checkbox" checked={isTasty} onChange={e => setIsTasty(e.target.checked)}/></label>
+
+</>    
+);
+}
