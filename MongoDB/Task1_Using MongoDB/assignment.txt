@@ -1,0 +1,182 @@
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.createCollection("my_first_db")
+{ ok: 1 }
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> show dbs
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Omar"} , {home_state : "Florida"} , {lucky_number : 3 } , {birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989ac40a88dff265dc83be")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Ali"} , {home_state : "Florida"} , {lucky_number : 2 } , {birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989ade0a88dff265dc83bf")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_firstAtlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Jalal"} , {home_state : "California"} , {lucky_number : 5 } , {birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989b0e0a88dff265dc83c0")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Sami"} , {home_state : "California"} , {lucky_number : 4 } , {birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989b210a88dff265dc83c1")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Anas"} , {home_state : "Russia"} , {lucky_number : 1 } , {birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989b400a88dff265dc83c2")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.find({home_state:"California"})
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.find({home_state:"California"})
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.find({ home_state: "California" })
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.find({ home_state: "California" })
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Anas",home_state : "Russia", lucky_number : 1 , birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989e7b0a88dff265dc83c3")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Sami",home_state : "California",lucky_number : 2 , birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989f090a88dff265dc83c4")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Omar",home_state : "California", lucky_number : 3 , birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989f570a88dff265dc83c5")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Jalal", home_state : "California" , lucky_number : 5 , birthday :{ month : 22 , day:"Sunday" , year : 2004}})
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989fad0a88dff265dc83c6")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.insertOne({name : "Ali", home_state : "Florida", lucky_number : 4 , birthday :{month : 22 , day:"Sunday" , year : 2004}} )
+{
+  acknowledged: true,
+  insertedId: ObjectId("67989fd10a88dff265dc83c7")
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix>  db.my_first_db.find({ home_state: "California" })
+[
+  {
+    _id: ObjectId("67989f090a88dff265dc83c4"),
+    name: 'Sami',
+    home_state: 'California',
+    lucky_number: 2,
+    birthday: { month: 22, day: 'Sunday', year: 2004 }
+  },
+  {
+    _id: ObjectId("67989f570a88dff265dc83c5"),
+    name: 'Omar',
+    home_state: 'California',
+    lucky_number: 3,
+    birthday: { month: 22, day: 'Sunday', year: 2004 }
+  },
+  {
+    _id: ObjectId("67989fad0a88dff265dc83c6"),
+    name: 'Jalal',
+    home_state: 'California',
+    lucky_number: 5,
+    birthday: { month: 22, day: 'Sunday', year: 2004 }
+  }
+]
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.find({lucky_number : {$gt : 3})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:45)
+
+> 1 | db.my_first_db.find({lucky_number : {$gt : 3})
+    |                                              ^
+  2 |
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.find({lucky_number : {$gt : 3}})
+[
+  {
+    _id: ObjectId("67989fad0a88dff265dc83c6"),
+    name: 'Jalal',
+    home_state: 'California',
+    lucky_number: 5,
+    birthday: { month: 22, day: 'Sunday', year: 2004 }
+  },
+  {
+    _id: ObjectId("67989fd10a88dff265dc83c7"),
+    name: 'Ali',
+    home_state: 'Florida',
+    lucky_number: 4,
+    birthday: { month: 22, day: 'Sunday', year: 2004 }
+  }
+]
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.updateMany({},{$set:{intersts : ['coding' , 'branch' , 'MongoDB']}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 5,
+  modifiedCount: 5,
+  upsertedCount: 0
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db({name:"Ali"} , {$push : {interests : {$each : ["gaming" , "traveling"]}}})
+TypeError: db.my_first_db is not a function
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.updateOne({},{$set:{intersts : ['coding' , 'branch' , 'MongoDB']}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_collection.updateOne(
+...   { name: "Ali" },
+...   { $push: { interests: { $each: ["gaming", "traveling"] } } }
+...
+... db.my_first_db.updateOne(
+Uncaught:
+SyntaxError: Unexpected token, expected "," (5:0)
+
+  3 |   { $push: { interests: { $each: ["gaming", "traveling"] } } }
+  4 |
+> 5 | db.my_first_db.updateOne(
+    | ^
+  6 |
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix>   { name: "Ali" },
+...   { $push: { interests: "taxes" } }
+... )
+Uncaught:
+SyntaxError: Unexpected token (1:17)
+
+> 1 |   { name: "Ali" },
+    |                  ^
+  2 |   { $push: { interests: "taxes" } }
+  3 | )
+  4 |
+
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.updateOne(
+...   { name: "Ali" },
+...   { $push: { interests: "taxes" } }
+... )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.updateOne(
+...   { name: "Ali" },
+...   { $pull: { interests: "taxes" } }
+... )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.deleteMany({ home_state: "California" })
+{ acknowledged: true, deletedCount: 3 }
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.deleteOne({ name: "Jalal" })
+{ acknowledged: true, deletedCount: 0 }
+Atlas atlas-ozmx8q-shard-0 [primary] sample_mflix> db.my_first_db.deleteOne({ lucky_number: { $gt: 5 } })
+{ acknowledged: true, deletedCount: 0 }
