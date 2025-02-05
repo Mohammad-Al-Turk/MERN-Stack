@@ -1,0 +1,90 @@
+.details-container {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-left: 90vh;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background: #45a049;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.directions {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    font-size: 16px;
+    padding: 8px;
+    background: #e0f7fa;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    background: #cc0000;
+}
+
+.loading {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,68 @@
+.container {
+    max-width: 800px;
+    margin-left: 80vh;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background: #45a049;
+}
+
+.speedys-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.speedys-table th, .speedys-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.speedys-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.speedys-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.speedys-table tr:hover {
+    background-color: #ddd;
+}
+
+.details-btn, .edit-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.details-btn {
+    background-color: #2196F3;
+}
+
+.details-btn:hover {
+    background-color: #1e87e2;
+}
+
+.edit-btn {
+    background-color: #ff9800;
+}
+
+.edit-btn:hover {
+    background-color: #e68900;
+}
