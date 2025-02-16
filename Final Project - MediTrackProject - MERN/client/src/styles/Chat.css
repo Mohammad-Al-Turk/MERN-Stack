@@ -1,0 +1,28 @@
+.chat-select, .chat-item {
+    cursor: pointer;
+}
+
+.selected-chat {
+    background-color: #e6f7ff; 
+}
+
+.ant-list-item.chat-item {
+    margin: 0 !important;
+    padding: 5px !important;
+
+}
+
+.ant-list-item.chat-item.selected-chat {
+    margin: 0 !important;
+    padding: 10px !important;
+
+}
+
+.chat-select .ant-select-selector {
+    background-color: #fff !important;
+
+}
+
+.send-button {
+    width: 50px;
+}

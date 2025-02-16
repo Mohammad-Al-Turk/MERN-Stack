@@ -1,0 +1,66 @@
+.dashboard-layout {
+    min-height: 100vh; /* Ensure full height layout */
+}
+
+.dashboard-header {
+    padding: 0 24px; /* Add padding to header */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    background: #001529;
+    color: white;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dashboard-sider {
+    background: #001529;
+}
+
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.dashboard-content {
+    margin: 24px; /* Add margin to content area */
+    background: #fff; /* White background for content */
+    padding: 24px; /* Add padding to content */
+    min-height: 280px; /* Ensure minimum height for content */
+    flex-grow: 1;
+}
+
+.dashboard-card {
+    margin-bottom: 16px; /* Add spacing between cards */
+}
+
+.dashboard-image {
+    width: 200px; 
+    height: auto; 
+}
+
+.footer {
+    text-align: center;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.logout-button {
+    width: 100px;
+}

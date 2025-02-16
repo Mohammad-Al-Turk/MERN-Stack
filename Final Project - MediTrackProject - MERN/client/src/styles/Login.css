@@ -1,0 +1,146 @@
+/* General Page Styling */
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left Image Styling */
+.login-wrapper img {
+  width: 50%;
+  max-width: 700px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Login Container */
+.login-container {
+  width: 40%;
+  max-width: 500px;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s ease-in-out;
+  margin-left: 10%;
+}
+
+/* Form Styling */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Link Styling */
+.login-container a {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.login-container a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Input Fields */
+.ant-input,
+.ant-input-password {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.ant-input:focus,
+.ant-input-password:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Button Styling */
+.ant-btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.ant-btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Alert Styling */
+.ant-alert-error {
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .login-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .login-wrapper img {
+      width: 80%;
+      height: auto;
+      max-height: 300px;
+      margin-bottom: 20px;
+      margin-right: 0;
+  }
+
+  .login-container {
+      width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-wrapper img {
+      width: 100%;
+      height: auto;
+  }
+
+  .login-container {
+      width: 95%;
+      padding: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

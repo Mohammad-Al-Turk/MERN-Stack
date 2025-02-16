@@ -1,0 +1,69 @@
+.editTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+/* Form container styling */
+.form-container {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Table-like grid for form */
+.form-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+}
+
+/* Styling for form columns */
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling for form rows */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Styling for form cells */
+.form-cell {
+    width: 100%; /* Make cells take up full width */
+    flex: 1;
+}
+
+/* Form item styling */
+.ant-form-item {
+    display: block;
+    flex-direction: column;
+}
+
+/* Ensure labels are above inputs */
+.ant-form-item-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Submit button */
+.submit-button {
+    grid-column: span 2; /* Center the submit button */
+    margin-top: 20px;
+}
+
+/* Additional Styling */
+.editTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

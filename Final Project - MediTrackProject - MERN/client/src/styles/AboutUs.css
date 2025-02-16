@@ -1,0 +1,142 @@
+/* Container for the entire About Us page */
+.about-us-container {
+    min-height: 100vh;
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem; /* Tailwind's p-6 */
+  }
+  
+  /* About Us Card */
+  .about-us-card {
+    max-width: 60rem; /* Tailwind's max-w-4xl */
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    border-radius: 1.5rem; /* Tailwind's rounded-2xl */
+    padding: 2rem 2.5rem; /* Tailwind's p-8 */
+  }
+  
+  /* Main Heading (About Us) */
+  .about-us-heading {
+    font-size: 2rem; /* Tailwind's text-3xl */
+    font-weight: 700; /* Tailwind's font-bold */
+    color: #3182ce; /* Tailwind's text-blue-600 */
+    margin-bottom: 1rem; /* Tailwind's mb-4 */
+  }
+  
+  /* Subheadings (Who We Are, What We Offer, etc.) */
+  .about-us-subheading {
+    font-size: 1.5rem; /* Tailwind's text-2xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    color: #2d3748; /* Tailwind's text-gray-800 */
+    margin-bottom: 0.75rem; /* Tailwind's mb-3 */
+  }
+  
+  /* Paragraphs */
+  .about-us-text {
+    font-size: 1rem; /* Tailwind's text-gray-700 */
+    margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+    line-height: 1.6;
+  }
+  
+  /* List style */
+  .about-us-list {
+    padding-left: 1.25rem; /* Tailwind's pl-5 */
+    color: #4a5568; /* Tailwind's text-gray-700 */
+    margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+  }
+  
+
+  
+  /* Highlight text */
+  .highlight-text {
+    font-weight: 600; /* Tailwind's font-semibold */
+  }
+  
+  /* Add responsiveness to make sure the page looks good on small screens */
+  @media (max-width: 768px) {
+    .about-us-card {
+      padding: 1.5rem; /* Adjust padding for small screens */
+    }
+  
+    .about-us-heading {
+      font-size: 1.75rem; /* Smaller heading for mobile */
+    }
+  
+    .about-us-subheading {
+      font-size: 1.25rem; /* Smaller subheadings */
+    }
+  
+    .about-us-text {
+      font-size: 0.95rem; /* Smaller text for mobile */
+    }
+  
+    .about-us-list {
+      padding-left: 1rem; /* Less padding for list */
+    }
+  }
+  .team-slider {
+    margin-top: 2rem;
+  }
+  
+  .team-member {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .team-role {
+    font-size: 1.2em;
+    color: #777;
+    white-space: pre-line; /* Ensure new lines are respected */
+  }
+
+  .team-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+    border: 1px solid #ddd;
+  }
+
+  .team-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 60%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .team-member-info {
+    text-align: center;
+    padding: 10px;
+  }

@@ -1,0 +1,29 @@
+.dashboard-layout {
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    background: #001529;
+    color: white;
+}
+
+.dashboard-welcome-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.logout-button {
+    width: 100px;
+}

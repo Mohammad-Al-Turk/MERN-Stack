@@ -1,0 +1,8 @@
+.selected-row {
+    background-color: #e6f7ff !important; /* Light blue background */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-container {
+    height: auto;
+}

@@ -1,0 +1,59 @@
+.footer-container {
+    background-color: #333;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 20px
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0px 20px;
+  
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-right:150px;
+  }
+  
+  .newsletter {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+  }
+  
+  .newsletter button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #c9302c;
+  }
+  
